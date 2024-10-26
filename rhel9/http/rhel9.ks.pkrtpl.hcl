@@ -8,7 +8,8 @@ keyboard us
 network --device eth0 --bootproto=dhcp
 firewall --enabled --service=ssh
 selinux --enforcing
-timezone UTC --isUtc
+#timezone selection deprecated adding new one. You can edit yours here.
+timezone Asia/Kolkata --utc
 bootloader --location=mbr --driveorder="vda" --timeout=1
 rootpw --plaintext password
 
